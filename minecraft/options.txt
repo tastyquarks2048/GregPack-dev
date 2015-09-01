@@ -97,6 +97,8 @@ key_waila.keybind.wailadisplay:79
 key_waila.keybind.liquid:80
 key_waila.keybind.recipe:81
 key_waila.keybind.usage:75
+key_key.placeItem:25
+key_key.toolConfig:46
 key_Glider Toggle:34
 key_Sound Locator:38
 key_Night Vision:25
@@ -104,7 +106,7 @@ key_Goggles of Revealing:19
 key_Step Assist:0
 key_Speed:0
 key_Yeta Wrench Mode:21
-soundCategory_master:0.0
+soundCategory_master:0.03311258
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
