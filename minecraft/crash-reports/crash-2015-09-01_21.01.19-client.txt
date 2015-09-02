@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 01/09/15 21:01
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.NoSuchMethodError: appeng.api.IAppEngApi.definitions()Lappeng/api/definitions/IDefinitions;
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:739)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:311)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:552)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:310)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:394)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+Caused by: java.lang.NoSuchMethodError: appeng.api.IAppEngApi.definitions()Lappeng/api/definitions/IDefinitions;
+	at extracells.integration.opencomputers.OCRecipes.loadRecipes(OCRecipes.java:13)
+	at extracells.integration.opencomputers.OpenComputers$.init(OpenComputers.scala:13)
+	at extracells.integration.opencomputers.OpenComputers.init(OpenComputers.scala)
+	at extracells.integration.Integration.init(Integration.java:98)
+	at extracells.Extracells$.init(Extracells.scala:61)
+	at extracells.Extracells.init(Extracells.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:737)
+	... 18 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 294039152 bytes (280 MB) / 867172352 bytes (827 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx1024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1448 41 mods loaded, 41 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHI	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHI	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1448-1.7.10-universal.jar) 
+	UCHI	Forge{10.13.4.1448} [Minecraft Forge] (forge-1.7.10-10.13.4.1448-1.7.10-universal.jar) 
+	UCHI	appliedenergistics2-core{rv2-beta-9} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UCHI	CodeChickenCore{1.0.6.43} [CodeChicken Core] (minecraft.jar) 
+	UCHI	NotEnoughItems{1.0.4.107} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.107-universal.jar) 
+	UCHI	OpenComputers|Core{1.5.16.32} [OpenComputers (Core)] (minecraft.jar) 
+	UCHI	AppleCore{1.1.0} [AppleCore] (AppleCore-mc1.7.10-1.1.0.jar) 
+	UCHI	gregapi{GT6-MC1710} [Greg-API] (gregtech_1.7.10-6.00.50.jar) 
+	UCHI	appliedenergistics2{rv2-beta-9} [Applied Energistics 2] (appliedenergistics2-rv2-beta-9.jar) 
+	UCHI	BrandonsCore{1.0.0.6} [Brandon's Core] (BrandonsCore-1.0.0.6.jar) 
+	UCHI	chisel{2.5.0.43} [Chisel 2] (Chisel2-2.5.0.43.jar) 
+	UCHI	ComputerCraft{1.74} [ComputerCraft] (ComputerCraft1.74.jar) 
+	UCHI	IC2{2.2.767-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.767-experimental.jar) 
+	UCHI	OpenComputers{1.5.16.32} [OpenComputers] (OpenComputers-MC1.7.10-1.5.16.32-universal.jar) 
+	UCHI	Waila{1.5.10} [Waila] (Waila-1.5.10_1.7.10.jar) 
+	UCHI	CompactMachines{1.7.10-1.20} [Compact Machines] (compactmachines-1.7.10-1.20.jar) 
+	UCHI	DraconicEvolution{1.0.2-snapshot_3} [Draconic Evolution] (Draconic-Evolution-1.7.10-1.0.2-Snapshot_3.jar) 
+	UCHI	EnderIO{1.7.10-2.2.8.381} [Ender IO] (EnderIO-1.7.10-2.2.8.381.jar) 
+	UCHE	extracells{2.2.73} [Extra Cells 2] (ExtraCells-1.7.10-2.2.73b129.jar) 
+	UCHI	ExtraUtilities{1.2.11} [Extra Utilities] (extrautilities-1.2.11.jar) 
+	UCHI	GraviSuite{1.7.10-2.0.3} [Graviation Suite] (GraviSuite-1.7.10-2.0.3.jar) 
+	UCHI	gregtech{GT6-MC1710} [GregTech] (gregtech_1.7.10-6.00.50.jar) 
+	UCHI	HardcoreQuesting{The Journey (4.2.4)} [Hardcore Questing Mode] (HQM-The Journey (4.2.4).jar) 
+	UCHI	IronChest{6.0.60.741} [Iron Chest] (ironchest-1.7.10-6.0.60.741-universal.jar) 
+	UCHI	LatCoreMC{1.6.11} [LatCoreMC] (LatCoreMC-1.7.10-1.6.11.1.jar) 
+	UCHI	LatBlocks{1.6.11} [LatBlocks] (LatBlocks-1.7.10-1.6.11.1.jar) 
+	UCHI	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] (Mantle-1.7.10-0.3.2.jar) 
+	UCHI	MineTweaker3{3.0.9B} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.9C.jar) 
+	UCHI	NEIAddons{1.12.11.36} [NEI Addons] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|Developer{1.12.11.36} [NEI Addons: Developer Tools] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|AppEng{1.12.11.36} [NEI Addons: Applied Energistics 2] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|Botany{1.12.11.36} [NEI Addons: Botany] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|Forestry{1.12.11.36} [NEI Addons: Forestry] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|CraftingTables{1.12.11.36} [NEI Addons: Crafting Tables] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	NEIAddons|ExNihilo{1.12.11.36} [NEI Addons: Ex Nihilo] (neiaddons-1.12.11.36-mc1.7.10.jar) 
+	UCHI	neiintegration{1.0.12} [NEI Integration] (NEIIntegration-MC1.7.10-1.0.12.jar) 
+	UCHI	RouterReborn{1.2.0.33} [Router Reborn] (RouterReborn-1.7.10-1.2.0.33-universal.jar) 
+	UCHI	SpiceOfLife{1.2.4} [The Spice of Life] (SpiceOfLife-mc1.7.10-1.2.4.jar) 
+	UCHI	StevesFactoryManager{A90} [Steve's Factory Manager] (Steves-Factory-Manager-Mod-1.7.10.jar) 
+	UCHI	XPT{1.1.0} [XP Teleporters] (XPTeleporters-1.7.10-1.1.0.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4252' Renderer: 'Intel(R) HD Graphics 4000'
+	AE2 Version: beta rv2-beta-9 for Forge 10.13.2.1291
+	Mantle Environment: Environment healthy.

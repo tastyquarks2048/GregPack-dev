@@ -1,37 +1,89 @@
-GT_Mod: Preload-Phase started!
-GT_Mod: Getting required Items of other Mods.
+GT_API: ======================
+GT_API: PreLoad-Phase started!
+GT_API: PreLoad-Phase finished!
+GT_API: =======================
+GT_Mod: ======================
+GT_Mod: PreLoad-Phase started!
 GT_Mod: Setting Configs
-GT_Mod: Downloading Cape List.
+GT_Mod: Downloading Silver Cape List.
 GT_Mod: Saving Main Config
-GT_Mod: Generating Lang-File
 GT_Mod: Removing all original Scrapbox Drops.
 GT_Mod: Adding Scrap with a Weight of 200.0F to the Scrapbox Drops.
-GT_Mod: Register Ore processing.
-GT_Mod: Downloading News.
 GT_Mod: Register OreDict Entries of Non-GT-Items.
-GT_Mod: Loading Item Data Tags
-GT_Mod: Register Books.
-GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Printer'  -  Name: 'Printer Manual V2.0'  -  Author: 'Gregorius Techneticies'
-GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Punch_Cards'  -  Name: 'Punch Card Manual V0.0'  -  Author: 'Gregorius Techneticies'
-GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Microwave'  -  Name: 'Microwave Oven Manual'  -  Author: 'Kitchen Industries'
+GT_Mod: Register Tools.
+GT_Mod: Downloading Gold Cape List.
+GT_Mod: Downloading News.
 GT_Mod: Register Items.
-GT_Mod: Adding Blocks.
-GT_Mod: Register TileEntities.
-GT_Mod: Testing BaseMetaTileEntity.
-GT_Mod: Registering the BaseMetaTileEntity.
-GT_Mod: Registering the BaseMetaPipeEntity.
-GT_Mod: Registering the Ore TileEntity.
-GT_Mod: Registering Fluids.
-GT_Mod: Hiding certain Items from NEI.
-GT_Mod: Registering MetaTileEntities.
+GT_Mod: Register PrefixBlocks.
+GT_Mod: Register Stones.
+GT_Mod: Register Ores.
+GT_Mod: Register Fluids.
+GT_Mod: Register Other Stuff.
+GT_Mod: Register own MultiTileEntity Stuff.
 GT_Mod: Register Redstone Circuit behaviours.
 GT_Mod: Adding Cover Behaviors
 GT_Mod: Loading Sonictron Sounds
 GT_Mod: Sorting GregTech to the end of the Mod List for further processing.
-GT_Mod: Preload-Phase finished!
-GT_Mod: Beginning Load-Phase.
+GT_Mod: PreLoad-Phase finished!
+GT_Mod: =======================
+GT_API: ===================
+GT_API: Load-Phase started!
+GT_API: Doing a lot of the OreDictionary work (populating HashMaps for enabling faster access to Data and parsing Stuff). This will take a while. Like a LOT of time.
+GT_API: If it seriously takes more than a hour then you definetly ran out of Memory or permgenspace, look at the other Logs to confirm it.
+GT_API: Finished a lot of the OreDictionary work.
+GT_API: Load-Phase finished!
+GT_API: ====================
+GT_Mod: ===================
+GT_Mod: Load-Phase started!
+GT_Mod: Register MultiTileEntities.
+GT_Mod: Register Books.
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Printer'  -  Name: 'Printer Manual V2.0'  -  Author: 'Gregorius Techneticies'
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Punch_Cards'  -  Name: 'Punch Card Manual V0.0'  -  Author: 'Gregorius Techneticies'
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Microwave'  -  Name: 'Microwave Oven Manual'  -  Author: 'Kitchen Industries'
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Smeltery'  -  Name: 'Smelting Crucible Manual'  -  Author: 'GMWI (Gregorius Metal Working Industries)'
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Alloys'  -  Name: 'Book of Alloys, Smeltery Edition (67)'  -  Author: 'GMWI (Gregorius Metal Working Industries)'
+GT_Mod: Added Book to Book List  -  Mapping: 'Manual_Elements'  -  Name: 'Book of Periods (76)'  -  Author: 'GCC (Gregorius Chemical Consortium)'
+GT_Mod: Register Ore processing.
 GT_Mod: Scanning for certain kinds of compatible Machineblocks.
 GT_Mod: Registering various Tools to be usable on GregTech Machines
 GT_Mod: Adding Food Recipes to the Automatic Canning Machine. (also during the following Item Iteration)
 GT_Mod: Scanning ItemList.
 GT_Mod: Registered valid BC Wrench: item.graviTool
+GT_Mod: Initializing various Fuels.
+GT_Mod: Load-Phase finished!
+GT_Mod: ====================
+GT_API: =======================
+GT_API: PostLoad-Phase started!
+GT_API: Doing a lot of more OreDictionary work (Registering Recipes). This will take a while. Like a LOT of time.
+GT_API: If it seriously takes more than a hour then you definetly ran out of Memory or permgenspace, look at the other Logs to confirm it.
+GT_API: Finished another batch of the OreDictionary work.
+GT_API: Re-Unificating Recipes.
+GT_API: PostLoad-Phase finished!
+GT_API: ========================
+GT_Mod: =======================
+GT_Mod: PostLoad-Phase started!
+GT_Mod: Adding Tool Usage Crafting Recipes for OreDict Items.
+GT_Mod: Adding worldgenerated Chest Content.
+GT_Mod: Adding Stuff to the Recycler Blacklist.
+GT_Mod: Adding Blocks to the Miners Valuable List.
+GT_Mod: (re-)adding Scrapbox Drops.
+GT_Mod: Register Crops to IC2.
+GT_Mod: Adding nerfed Vanilla Recipes.
+GT_Mod: Adding Vanilla Convenience Recipes.
+GT_Mod: Adding Wool and Color releated Recipes.
+GT_Mod: Adding Rolling Machine Recipes.
+GT_Mod: Replacing Railcraft Recipes with slightly more OreDicted Variants
+GT_Mod: Registering a lot of replaced Recipes.
+GT_Mod: Created a List of Tool Recipes containing 69 Recipes from 6 different Materials for recycling.
+GT_Mod: Nerfing Vanilla Tool Durability
+GT_Mod: Adding buffered Recipes.
+GT_Mod: PostLoad-Phase finished!
+GT_Mod: ========================
+GT_Mod: Adding Fake Recipes for NEI
+GT_Mod: Setting up Icon Register for Blocks
+GT_Mod: Starting Block Icon Load Phase
+GT_Mod: Registering Crop specific Textures
+GT_Mod: Finished Block Icon Load Phase
+GT_Mod: Setting up Icon Register for Items
+GT_Mod: Starting Item Icon Load Phase
+GT_Mod: Finished Item Icon Load Phase
